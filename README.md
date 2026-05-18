@@ -11,7 +11,7 @@ Official implementation of:
 GWF implements the JKO (Jordan-Kinderlehrer-Otto) proximal scheme for generative modelling.
 At each outer step the generator solves the proximal problem:
 
-$$T_{k+1} = \arg\min_T \; D(T_\sharp\mu_0 \| \nu) + \frac{1}{2\tau} \|T - T_k\|^2_{L^2(\mu_0)}$$
+$$T_{k+1} = \arg\min_T \{ D(T_\sharp\mu_0 \| \nu) + \frac{1}{2\tau} ||T - T_k||^2_{L^2(\mu_0)} \}$$
 
 It supports **f-divergences** (KL, chi², Jensen-Shannon), **IPMs** (Wasserstein-1), and **squared MMD** variants (MMD, ckMMD, sMMD, iMMD).
 The Donsker-Varadhan (DV) formulation of the KL divergence (`KL_DV`) is also supported and generally yields improved results (see Section 5.1 of the paper).
