@@ -1,6 +1,6 @@
 # Generative Wasserstein Flows (GWF)
 
-Official implementation of:
+Implementation of our paper:
 
 > **A Unifying View of Variational Generative Wasserstein Flows**  
 > Paul Caucheteux, Clément Bonet, Anna Korba.  
